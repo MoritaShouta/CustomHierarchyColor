@@ -1,9 +1,9 @@
 {
     "name": "com.figse.customhierarchycolor",
-    "version": "1.0.0",
     "displayName": "Custom Hierarchy Color",
-    "description": "only Unity Editor",
+    "version": "1.0.0",
     "unity": "2019.4",
-    "repository": "https://github.com/MoritaShouta/CustomHierarchyColor/tree/main/CustomHierarchyColor.git"
+    "description": "only Unity Editor",
+    "dependencies": {}
 }
   
