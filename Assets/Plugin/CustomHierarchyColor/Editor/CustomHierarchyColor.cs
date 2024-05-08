@@ -27,7 +27,7 @@ namespace CustomHierarchyColor
 
             if (hierarchyColorScriptable == null)
             {
-                Debug.LogError("[HierarchyColorBeforeName] Can't find setting file.\n Create assets in the [ Figse/Hierarchy Color Settings ] window.");
+                MissingLog();
                 return;
             }
         }
@@ -75,6 +75,25 @@ namespace CustomHierarchyColor
                 }
             }
             return false;
+        }
+
+        public static void SelectSettingFile()
+        {
+            if(hierarchyColorScriptable != null)
+            {
+                // 作成したアセットをエディタで選択します。
+                EditorUtility.FocusProjectWindow();
+                Selection.activeObject = hierarchyColorScriptable;
+            }
+            else
+            {
+                MissingLog();
+            }
+        }
+
+        private static void MissingLog()
+        {
+            Debug.LogError("[HierarchyColorBeforeName] Can't find setting file.\n Create assets in the [ Figse/Hierarchy Color Settings ] window.");
         }
     }
 }

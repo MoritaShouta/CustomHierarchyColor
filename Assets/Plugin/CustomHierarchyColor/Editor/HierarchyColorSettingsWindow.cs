@@ -22,7 +22,8 @@ namespace CustomHierarchyColor
             if (GUILayout.Button("Create HierarchyColorSettings Asset"))
             {
                 AssetCreator.CreateAssetWithFolders<HierarchyColorScriptable>(CustomHierarchyColor.SETTING_FILE_PATH);
-
+                CustomHierarchyColor.RefreshSetting();
+                Debug.Log("[Hierarchy Color Settings] Refresh");
             }
             EditorGUI.EndDisabledGroup();
 
@@ -30,6 +31,10 @@ namespace CustomHierarchyColor
             {
                 CustomHierarchyColor.RefreshSetting();
                 Debug.Log("[Hierarchy Color Settings] Refresh");
+            }
+            if (GUILayout.Button("Select Setting File"))
+            {
+                CustomHierarchyColor.SelectSettingFile();
             }
         }
     }
