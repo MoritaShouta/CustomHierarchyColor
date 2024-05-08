@@ -1,19 +1,19 @@
 # CustomHierarchyColor
 
 ## 概要
-Hierarchy上を見やすくするために作成しました。
-どっかで見たことあったのですが、カスタイマイズできるように自作しました。
+Hierarchy上を見やすくするために作成しました。  
+機能はどっかで見たことあったのですが、カスタイマイズできるように自作しました。
 ![Summary Image](IMG/summary.png)
 ## インストール
 PackageManagerのURLで追加する
-`https://github.com/MoritaShouta/CustomHierarchyColor.git?path=/CustomHierarchyColor`で追加できます。
+`https://github.com/MoritaShouta/CustomHierarchyColor.git?path=/Assets/Plugin/CustomHierarchyColor`で追加できます。
 ![UMP Image](IMG/UMP-URL.png)
 ![UMP Image 2](IMG/UMP-InputURL.png)
 
-それ以外に、`"com.figse.customhierarchycolor":"https://github.com/MoritaShouta/CustomHierarchyColor.git?path=/CustomHierarchyColor"`を直接`Packages/manifest.json`に追加しても大丈夫です。
+それ以外に、`"com.figse.customhierarchycolor":"https://github.com/MoritaShouta/CustomHierarchyColor.git?path=/Assets/Plugin/CustomHierarchyColor"`を直接`Packages/manifest.json`に追加しても大丈夫です。
 
 ## 使用方法
-最初はこのようなエラーが出ます、これは設定ファイルが存在しないためエラーが発生します。
+最初はこのようなエラーが出ます、これは設定ファイルが存在しないためエラーが発生します。  
 正常です。
 ![Start Image](IMG/start.png)
 
@@ -35,5 +35,5 @@ PackageManagerのURLで追加する
 上から優先度が決まります、なので一番上が優先度一番高いです。優先度をチェックしてください。
 ![Error Image](IMG/Error.png)
 
-文字列検索で作成されているため、指定した文字列がどこに入ったとしても反応してしまいます。これは修正予定です。
+文字列検索で作成されているため、指定した文字列がどこに入ったとしても反応してしまいます。  これは修正予定です。
 ![Error Image 2](IMG/Error2.png)
