@@ -6,11 +6,11 @@ Hierarchy上を見やすくするために作成しました。
 ![Summary Image](IMG/summary.png)
 ## インストール
 PackageManagerのURLで追加する
-`https://github.com/MoritaShouta/CustomHierarchyColor.git`で追加できます。
+`https://github.com/MoritaShouta/CustomHierarchyColor.git?path=/CustomHierarchyColor`で追加できます。
 ![UMP Image](IMG/UMP-URL.png)
 ![UMP Image 2](IMG/UMP-InputURL.png)
 
-それ以外に、`"com.figse.customhierarchycolor":"https://github.com/MoritaShouta/CustomHierarchyColor.git"`を直接`Packages/manifest.json`に追加しても大丈夫です。
+それ以外に、`"com.figse.customhierarchycolor":"https://github.com/MoritaShouta/CustomHierarchyColor.git?path=/CustomHierarchyColor"`を直接`Packages/manifest.json`に追加しても大丈夫です。
 
 ## 使用方法
 最初はこのようなエラーが出ます、これは設定ファイルが存在しないためエラーが発生します。
